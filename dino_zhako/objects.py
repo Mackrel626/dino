@@ -39,4 +39,31 @@ class Player(Sprite):
             'left': list(range(10, 17))
         }
 
-'''дописати'''
+        self.is_jump = False
+        self.jump_count = 25
+
+        self.fall = 0
+        self.gravity = 2.5
+        self.on_graunt = True
+
+    def update(self, platform):
+        pass
+
+class Button:
+    def __init__(self, x,y,w,h,color,text,txt_size,txt_color):
+        self.w = w 
+        self.h = h 
+        self.color = color
+
+        self.image = pygame.Surface((w,h))
+        self.image.fill(color)
+
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
+        self.text = pygame.font.Font(None, txt_size).render(text, True, txt_color)
+
+    def draw(self, shift_x, shift_y):
+        window.blit(self.image, (self.rect.x, self.rect.y))
+        window.blit(self.text, (self.rect.x + shift_x, self.rect.y + shift_y))
+    

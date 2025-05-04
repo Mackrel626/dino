@@ -41,10 +41,10 @@ player_images = [
     pygame.image.load('assets/images/player/move_left_6.png'),
 ]
 
-coin_image = pygame.image.load('assets/coin/coin.png')
-key_image = pygame.image.load('assets/key/key.png')
-chest_image = pygame.image.load('assets/chest/chest.png')
-portal_image = pygame.image.load('assets/portal/portal.png')
+coin_image = pygame.image.load('assets/images/coin/coin.png')
+key_image = pygame.image.load('assets/images/key/key.png')
+chest_image = pygame.image.load('assets/images/chest/chest.png')
+portal_image = pygame.image.load('assets/images/portal/portal.png')
 
 '''Шрифт'''
 pygame.font.init()
